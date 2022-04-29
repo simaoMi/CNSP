@@ -73,8 +73,10 @@ USE_L10N = True
 
 USE_TZ = False
 
+AUTH_USER_MODEL = 'account.UserModel'
+
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-from rest_framework.renderers import JSONOpenAPIRenderer
+
 REST_FRAMEWORK = {
     'DEFAULT_RENDERER_CLASSES': [
         'rest_framework.renderers.JSONOpenAPIRenderer',
